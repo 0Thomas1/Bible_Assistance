@@ -1,5 +1,5 @@
 #from langchain_community import Ollama
-from langchain_community.llms import Ollama
+#from langchain_community.llms import Ollama
 import bs4
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -54,5 +54,5 @@ def rag_chain(question):
 
 #5. Create the task
 print("Loading the model....")
-#result = rag_chain("Who is the Jesus Christ?")
-#print(result)
+result = rag_chain("Who is the Jesus Christ?")
+print(result)
